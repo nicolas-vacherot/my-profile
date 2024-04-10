@@ -1,0 +1,123 @@
+/* Root variables for easy theme customization */
+:root {
+  --primary-color: #575F7D;
+  --secondary-color: #7ECE90;
+  --accent-color: #6B71E1;
+  --hover-color: #964B00;
+  --font-primary: 'Nicolas', serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --background-color: #F5F5F5;
+  --text-color: var(--primary-color);
+  --link-color: var(--accent-color);
+  --hover-effect: brightness(120%);
+}
+
+/* Base styling */
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-primary);
+  font-size: 17px;
+  font-weight: 300;
+}
+
+/* Heading styles */
+h1, h2, h3 {
+  font-family: var(--font-secondary);
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight: 900;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Link styling */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover-color);
+  filter: var(--hover-effect);
+}
+
+/* Image and list styling */
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1); /* Slightly enlarge images on hover */
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+/* Icon styling */
+i {
+  font-size: 50px;
+  color: #D2D2D2;
+  transition: color 0.3s ease;
+}
+
+i:hover {
+  color: red;
+  transform: rotate(20deg); /* Rotate icons for a playful hover effect */
+}
+
+/* Container and card styling */
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.card-white {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 35px;
+  margin: 35px auto;
+  text-align: center;
+}
+
+/* Button styling */
+.btn-blue {
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-blue:hover {
+  background-color: #646464;
+  transform: translateY(-5px); /* Lift button slightly for an interactive hover effect */
+}
+
+/* Introduction paragraph styling */
+#intro p {
+  margin-bottom: 40px;
+}
